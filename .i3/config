@@ -51,6 +51,7 @@ bindcode 135 exec paplay ~/.i3/shoot.wav
 bindcode $mod+91 exec killall paplay
 
 #screenshot
+# bindsym Print exec gnome-screenshot
 bindsym Print exec gnome-screenshot
 
 #make current selected window into a scratchpad
@@ -84,7 +85,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill

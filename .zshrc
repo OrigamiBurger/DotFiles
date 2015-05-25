@@ -19,9 +19,14 @@ alias tmuxconf="vim ~/.tmux.conf"
 alias tmuxreload="tmux source-file ~/.tmux.conf"
 alias sshconf="vim ~/.ssh/config"
 alias svim="sudo vim"
+alias i3conf="vim ~/.i3/config"
+# export JAVA_HOME=$(/usr/libexec/java_home)
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-
+#For linux distros. Force the current temrinal into 256 colors for airline themes
+if [ "$TERM" = "xterm" ]
+then
+    export TERM=xterm-256color
+fi
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -109,7 +114,7 @@ alias gtree='git log --graph --decorate --pretty=oneline --abbrev-commit'
 
 # Add the following line to your ~/.bash_profile or ~/.zshrc file (and remember
 # to source the file to update your current session):
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+# [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # ZSH autojump tab completion
 autoload -U compinit && compinit
