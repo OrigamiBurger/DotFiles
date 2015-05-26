@@ -19,7 +19,7 @@ alias tmuxconf="vim ~/.tmux.conf"
 alias tmuxreload="tmux source-file ~/.tmux.conf"
 alias sshconf="vim ~/.ssh/config"
 alias svim="sudo vim"
-
+alias la="ls -la"
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Set to this to use case-sensitive completion
