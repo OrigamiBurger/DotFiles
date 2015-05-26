@@ -19,11 +19,6 @@ alias tmuxconf="vim ~/.tmux.conf"
 alias tmuxreload="tmux source-file ~/.tmux.conf"
 alias sshconf="vim ~/.ssh/config"
 alias svim="sudo vim"
-<<<<<<< HEAD:mac/.zshrc
-alias la="ls -la"
-export JAVA_HOME=$(/usr/libexec/java_home)
-
-=======
 alias i3conf="vim ~/.i3/config"
 # export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -32,7 +27,6 @@ if [ "$TERM" = "xterm" ]
 then
     export TERM=xterm-256color
 fi
->>>>>>> c7d81ab91fa4177df4cda8412b1f25d7416449b0:.zshrc
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
