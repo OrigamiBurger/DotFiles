@@ -36,5 +36,6 @@ sudo dnf -y install cowsay
 sudo dnf -y install p7zip
 sudo dnf -y install steam
 sudo dnf -y install network-manager-applet
+sudo dnf -y install xbacklight
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 printf "\nDon't forget to set the custom profile for using zsh in gnome-terminal\n"
