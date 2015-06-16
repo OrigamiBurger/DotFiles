@@ -19,7 +19,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 # Pulse Audio controls, play sound and kill for immediate refresh
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% && killall -USR1 i3status && exec paplay ~/.i3/tree_frog.wav #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% && killall -USR1 i3status && exec paplay ~/.i3/tree_frog.wav #decrease sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% && killall -USR1 i3status && exec paplay ~/.i3/tree_frog.wav #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle && killall -USR1 i3status && exec paplay ~/.i3/tree_frog.wav # mute sound
 
 bindsym Shift+XF86AudioRaiseVolume exec pactl set-sink-volume 0 -- +1% && killall -USR1 i3status && exec paplay ~/.i3/tree_frog.wav
@@ -61,7 +61,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 #program shortcuts
-bindsym $mod+F1 exec google-chrome
+bindsym $mod+F1 exec firefox
 bindsym $mod+F2 exec pcmanfm
 
 set $mod Mod4
