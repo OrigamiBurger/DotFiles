@@ -1,0 +1,16 @@
+Host wal1qa-app1 wal1qa-app2 wal1qa-app3
+    User devbuild
+Host labA01
+    HostName ue1b-labA01
+    User devbuild
+Host labA02
+    HostName ue1b-labA02
+    User devbuild
+
+Host labA03
+    HostName ue1b-labA03
+    User devbuild
+
+Host vps
+    HostName 76.10.221.83
+    User root
